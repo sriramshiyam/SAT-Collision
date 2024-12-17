@@ -215,10 +215,18 @@ void DrawNormalsAndProjections(Rectangle &box1, Rectangle &box2, int normalIndex
     DrawLineV(minPoint2, minProj2, BLUE);
     DrawLineV(maxPoint2, maxProj2, BLUE);
 
-    DrawCircleV(minProj1, 3.0f, WHITE);
-    DrawCircleV(maxProj1, 3.0f, WHITE);
-    DrawCircleV(minProj2, 3.0f, WHITE);
-    DrawCircleV(maxProj2, 3.0f, WHITE);
+    DrawLineV(minProj1, maxProj1, GREEN);
+    DrawLineV(minProj2, maxProj2, {255, 0, 0, 150});
+
+    DrawCircleV(minPoint1, 3.0f, GREEN);
+    DrawCircleV(maxPoint1, 3.0f, GREEN);
+    DrawCircleV(minPoint2, 3.0f, GREEN);
+    DrawCircleV(maxPoint2, 3.0f, GREEN);
+
+    DrawCircleV(minProj1, 3.0f, GREEN);
+    DrawCircleV(maxProj1, 3.0f, GREEN);
+    DrawCircleV(minProj2, 3.0f, GREEN);
+    DrawCircleV(maxProj2, 3.0f, GREEN);
 }
 
 void LoadBox1Points(float rotation, Rectangle &box)
