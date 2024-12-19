@@ -9,3 +9,10 @@ To project a point or vector onto an axis (a line in space), you use the dot pro
 $\mathbf{w} = \frac{\mathbf{u} \cdot \mathbf{v}}{\|\mathbf{v}\|^2} \mathbf{v}$
 
 <img src="projection.png" width="90%" style="max-width: 600px;"/>
+
+## Prerequisites
+
+Make sure you have the following installed on your system:
+
+- [Raylib](https://www.raylib.com/)
+- CMake (version 3.x or higher)
